@@ -1,4 +1,5 @@
 @echo off
+if "%1" == "" (echo Open an .ansii file with this program&pause>nul&exit)
 title Ansii  %1
 :0
 echo [0m

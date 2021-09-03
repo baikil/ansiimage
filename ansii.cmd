@@ -1,5 +1,7 @@
 @echo off
-if "%1" == "" (echo Open an .ansii file with this program&pause>nul&exit)
+for %%a in (%1) do (set ext=%%~xa)    
+if "%1" == "" (echo No file was specified&pause&exit /b)
+if not "%ext%" == ".ansii" (echo The file specified didn't have the expected extension [%ext%] -^> [.asnii]&pause&exit /b)
 title Ansii  %1
 :0
 echo [0m

@@ -1,8 +1,8 @@
 @echo off
+title Ansii  %1
 for %%a in (%1) do (set ext=%%~xa)    
 if "%1" == "" (echo No file was specified&pause&exit /b)
-if not "%ext%" == ".ansii" (echo The file specified didn't have the expected extension [%ext%] -^> [.asnii]&pause&exit /b)
-title Ansii  %1
+if not "%ext%" == ".ansii" (echo The file specified didn't have the expected extension [%ext%] -^> [.ansii]&pause&exit /b)
 :0
 echo [0m
 cls
